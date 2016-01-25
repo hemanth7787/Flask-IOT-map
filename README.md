@@ -1,6 +1,6 @@
 # Flask-IOT-map
 
-A python(flask) implementation of [IOT-Map]
+A python(flask) implementation of [IOT-Map] . The server accepts temprature details of devices placed along numerous geographical locations via HTTP post and shows them in google map.  Websockets are used to update the map in realtime.
 
 Setup:
 
