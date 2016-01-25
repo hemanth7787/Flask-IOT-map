@@ -75,7 +75,7 @@ def index():
         handleWeather(flask.request.values)
         return flask.jsonify(status="ok")
     else:
-        return flask.render_template('map_index.html')
+        return flask.render_template('index.html')
 
 @socketio.on('connect', namespace='/')
 def init_maps():
@@ -86,4 +86,4 @@ def init_maps():
 
 if __name__ == '__main__':
     #socketio.run(app, debug=True)
-    socketio.run(app)
+    socketio.run(app,host= '0.0.0.0')
