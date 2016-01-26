@@ -5,6 +5,8 @@ A python(flask) implementation of [IOT-Map] . The server accepts temprature deta
 Setup:
 
 ```sh
+# As on ubuntu 14.04
+sudo apt-get build-dep python-eventlet
 pip install -r requirements.txt
 python server.py
 ```
