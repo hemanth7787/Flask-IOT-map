@@ -8,6 +8,7 @@ Setup:
 # As on ubuntu 14.04
 sudo apt-get build-dep python-eventlet
 pip install -r requirements.txt
+python init_db.py
 python server.py
 ```
 

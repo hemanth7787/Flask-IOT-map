@@ -43,8 +43,8 @@
       var lookup = [];
       var count = 0;
       socket.on('data', function (data) {
-          var lat = parseFloat(data.lat).toFixed(3);
-          var long = parseFloat(data.long).toFixed(3);
+          var lat = parseFloat(data.lattitude).toFixed(3);
+          var long = parseFloat(data.longitude).toFixed(3);
           var loc = getLocation([lat, long]);
           if(loc == -1){
             var latlong = new google.maps.LatLng(lat, long);
@@ -76,8 +76,8 @@
       socket.on('data-multiple', function(data){
           if(Array.isArray(data)){
             data.forEach(function(obj){
-              var lat = parseFloat(obj.lat).toFixed(3);
-              var long = parseFloat(obj.long).toFixed(3);
+              var lat = parseFloat(obj.lattitude).toFixed(3);
+              var long = parseFloat(obj.longitude).toFixed(3);
 
               latlong = new google.maps.LatLng(lat, long);
 
