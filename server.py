@@ -1,6 +1,5 @@
 import flask
 import flask_socketio
-from contextlib import closing
 from models import Weather
 
 app = flask.Flask(__name__)
